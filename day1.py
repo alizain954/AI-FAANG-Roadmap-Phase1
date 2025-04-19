@@ -151,7 +151,7 @@ for i in range(10):
 
 # problem of DSA
 
-name = input('enter the num')
+name = input('enter the name')
 b = ''
 for i in name:
     b = i + b
