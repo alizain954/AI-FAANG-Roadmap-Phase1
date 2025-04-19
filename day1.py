@@ -64,3 +64,98 @@ print(b[2:]) # start from 2 index and print end of string
 print(b[:4]) # start from 0 index and print the 4 index
 print(b[3:7]) #statr from 3 and end on 7 but 7 is not print means print before 7 on 6 index
 print(b[-5:-2]) #negative indexing statr from the right to left it not start from 0 it start -1
+
+# Number Float and complex in python and also see the boolean datatype
+
+num = 123
+num_f = 12.3
+num_b = True
+num_c = 2+3j
+
+print(num)
+print(num_f)
+print(num_b)
+print(num_c)
+
+# now check the type of the these datatype
+
+print(type(num))
+print(type(num_f))
+print(type(num_b))
+print(type(num_c))
+
+# Now we are using the I/O and Output 
+
+input_num = input('enter the name')
+print(input_num)
+
+#By default, input is taken as a string, convert if needed
+
+input_int = int(input('Enter the Number: '))
+print(input_int)
+
+# script for bmi calculate
+
+name = input('Enter your name: ')
+age = int(input("enter the age: "))
+weight = float(input('Enter your weight: '))
+height = 1.80
+
+bmi = weight /  height ** 2
+print(f"Hello {name}, you are {age} years old. Your BMI is {round(bmi, 2)}.")
+
+
+# if else condition
+
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("You are an adult.")
+elif age >= 13:
+    print("You are a teenager.")
+else:
+    print("You are a child.")
+    
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print(f"{age} is churil")
+elif age >= 13:
+    print("You are a teenager.")
+else:
+    print("You are a child.")
+
+
+# Loop ( For While, Break, Continues)
+
+a = range(0, 21)
+for i in a:
+    print(i)
+
+    
+# while loop
+
+i = 0
+
+while i <= 10:
+    print(f'ali is here, {i}')
+    i += 1
+
+# Continue, Break
+for i in range(10):
+    if i == 3:
+        continue  # skip 3
+    if i == 7:
+        break     # stop at 7
+    print(i)
+
+# problem of DSA
+
+name = input('enter the num')
+b = ''
+for i in name:
+    b = i + b
+
+print(b)
+
+    
